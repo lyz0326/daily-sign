@@ -1,7 +1,8 @@
 name: Schedule Worker
-on:
-  schedule:
-    - cron: '40 16,4 * * *' #每日24点40,12点40，两个时间点执行任务
+on: push
+#on:
+  #schedule:
+   # - cron: '40 16,4 * * *' #每日24点40,12点40，两个时间点执行任务
 jobs:
   work:
     runs-on: ubuntu-latest
