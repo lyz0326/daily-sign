@@ -13,7 +13,7 @@ jobs:
           timezoneLinux: "Asia/Shanghai"
       - uses: actions/setup-python@v4 # 使用python装配器
         with:
-          python-version: '3.8.10' # 指定python版本
+          python-version: '3.10' # 指定python版本
           cache: 'poetry' # 设置缓存
 
       - run: poetry install --without dev # 安装
