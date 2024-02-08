@@ -7,8 +7,8 @@ jobs:
   work:
     runs-on: ubuntu-latest
     steps:
-      - name: chack out eepository
-        uses: actions/checkout@v3
+      - name: check out repository
+        uses: actions/checkout@v4
       - name: Install poetry
         run: pipx install poetry
         
@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.10' # 指定python版本
           cache: 'poetry' # 设置缓存
-          cache-depend-path: '**/poetry.lock'
+          cache-dependency-path: '**/poetry.lock'
 
       - run: poetry install --without dev # 安装
       - run: poetry run python .\main.py # 执行
