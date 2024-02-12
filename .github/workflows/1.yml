@@ -22,6 +22,6 @@ jobs:
           cache-dependency-path: '**/poetry.lock'
 
       #- run: poetry install --without dev #
-      - run: run python .\main.py # 执行
+      - run: python .\main.py # 执行
 
 
